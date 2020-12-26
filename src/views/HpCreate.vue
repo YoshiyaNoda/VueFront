@@ -1,6 +1,9 @@
 <template>
   <div class="wrapper">
       <h1>Hello</h1>
+      <p>Let's make it through to the end.</p>
+      <p>Hurry moderately.</p>
+      <p>We can do anything.</p>
   </div>
 </template>
 
