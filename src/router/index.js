@@ -1,10 +1,16 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
+import HpCreate from '../views/HpCreate.vue'
 
 Vue.use(VueRouter)
 
 const routes = [
+  {
+    path: '/hp',
+    name: 'HpCreate',
+    component: HpCreate
+  },
   {
     path: '/',
     name: 'Home',
