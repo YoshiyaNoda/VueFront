@@ -17,7 +17,7 @@ export default {
         };
     },
     mounted: function() {
-        const url = "https://www.yoshiyasakugawa.com/api/fetch";
+        const url = "http://localhost:8000/api/hoge";
         axios.get(url).then(res => {
            this.msg = res.data;
         });
