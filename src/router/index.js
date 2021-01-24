@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
+// import Home from '../views/Home.vue'
 import Sample from '../views/Sample.vue'
 import ArticleEdit from '../views/ArticleEdit.vue'
 import HpCreate from '../views/HpCreate.vue'
@@ -15,8 +15,8 @@ const routes = [
   },
   {
     path: '/home',
-    name: 'Home',
-    component: Home
+    name: 'HpCreate',
+    component: HpCreate
   },
   {
     path: '/sample',
