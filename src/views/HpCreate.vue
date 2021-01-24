@@ -35,6 +35,7 @@
 import axios from 'axios';
 import ArticleComponent from './ArticleComponent.js';
 import EditorComponent from './EditorComponent.vue';
+import _ from 'lodash'; //ちゃんとは調べてないけどDeep Copyした方が良さそうなので、そのためにlodashを使う
 
 export default {
 	components: {
@@ -78,7 +79,7 @@ export default {
 				type: type,
 				option: 'normal',
 				// dataはdeepcopyで初期値を設定
-				data: ArticleComponent[type].normal.data
+				data: _.cloneDeep(ArticleComponent[type].normal.data)
 			})
 		}
 	}
