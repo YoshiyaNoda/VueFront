@@ -17,6 +17,7 @@
 					<div class="typeSelect">
 						<div class="typeSelectBtnContainer">
 							<button @click="addElement(0, 'heading')">普通の見出し</button>
+							<button @click="addElement(0, 'paragraph')">内容</button>
 						</div>
 					</div>
 				</div>
@@ -30,6 +31,7 @@
 					<div class="typeSelect">
 						<div class="typeSelectBtnContainer">
 							<button @click="addElement(idx+1, 'heading')">普通の見出し</button>
+							<button @click="addElement(idx+1, 'paragraph')">内容</button>
 						</div>
 					</div>
 				</div>

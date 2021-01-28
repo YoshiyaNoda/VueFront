@@ -7,7 +7,7 @@
       <HeadingEditor :article-data="d" />
     </div>
     <div v-if="articleData.type === 'paragraph'">
-      <ParagraphEditor />
+      <ParagraphEditor :article-data="d" />
     </div>
   </div>
 </template> 
@@ -15,8 +15,8 @@
 <script>
 import HeadingEditor from './editors/HeadingEditor.vue';
 import ParagraphEditor from './editors/ParagraphEditor.vue';
-import ArticleComponent from './ArticleComponent.js';
-import _ from 'lodash';
+//import ArticleComponent from './ArticleComponent.js';
+//import _ from 'lodash';
 
 export default {
   components: {
@@ -28,9 +28,7 @@ export default {
       d: this.articleData
     };
   },
-  props: {
-    articleData: _.cloneDeep(ArticleComponent.heading.normal)
-  },
+  props: ["articleData"],
   watch: {
     // こうやってpropsは監視して、dataを子コンポーネントに渡さないと、おかしなことが起こる
     articleData: function(data) {
